@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz App</title>
+</head>
+<body>
+    <h1>Quiz Game</h1>
+    <p class="hide-this">Your score: <span class="scoreCounter">0</span> / 10</p>
+    <h2 class="hide-this">You are on question: <span id="questionCounter"></span> / 10 </h2>
+
+    <div id="Questions">
+        <p class="questions">Questions and stuff.</p>
+        <form>
+            <label><input type="radio" name="usersanswer" value="0"><span id="answer0"></span></label><br>
+            <label><input type="radio" name="usersanswer" value="1"><span id="answer1"></span></label><br>
+            <label><input type="radio" name="usersanswer" value="2"><span id="answer2"></span></label><br>
+            <label><input type="radio" name="usersanswer" value="3"><span id="answer3"></span></label><br>
+            <input type="submit" id="send" name="submit" value="Guess">
+        </form>
+    </div>
+
+    <div id="Feedback">
+        <p class="feedback-message"></p>
+        <button type="button" id="next-question">Next Question, foo.</button>
+    </div>
+
+    <div id="Final-Tally">
+        <p>This is your Final Score! Look Upon it: <span class="scoreCounter">0</span>/10</p>
+        <button type="button" id="restart">Restart Quiz</button>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
